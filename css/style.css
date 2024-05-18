@@ -1,0 +1,205 @@
+/*----------------------------------------
+  1.  Theme default CSS
+----------------------------------------*/
+html, body {height: 100%;}
+img {max-width:100%;height:auto}
+p {margin:0 0 15px;}
+h1,
+h2, 
+h3, 
+h4, 
+h5,
+h6 {
+  margin: 0 0 10px;
+}
+a:focus {outline:0px solid}
+a{
+  transition: all 0.4s ease 0s;
+  text-decoration:none;
+}
+a:hover {
+  color: #DE5B25;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {
+    
+}
+
+
+/*----------------------
+    slider-area css
+--------------------------*/
+.slider-area {
+  background: url(../img/slider-bg.jpg)no-repeat scroll center center / cover;
+  padding: 170px 0;
+  position: relative;
+}
+.overlay::after {
+  background: rgba(11, 11, 11, 0.7) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.slider-info {
+  position: relative;
+  z-index: 99;
+}
+.slider-info h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.slider-info p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.slider-info .button {
+  background: #dc143c;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 40px;
+  padding: 0 30px;
+  border: 1px solid #dc143c;
+  text-transform: uppercase;
+}
+.slider-info .button:hover {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #ffffff;
+  color: #dc143c;
+}
+/*-------------------
+    demos-content
+---------------------*/
+.demos-content {
+  padding: 60px 0;
+}
+
+.section-titel h3 {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  text-transform: uppercase;
+}
+.single-demo:hover .demo-img > a::before{
+    opacity: 1;
+}.single-demo:hover .hover-title > h4{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.single-demo {
+  margin-bottom: 60px;
+}
+.demo-img > a {
+  display: block;
+  position: relative;
+}
+.hover-title {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.hover-title > h4 {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  margin: 0;
+  opacity: 0;
+  padding: 0 20px;
+  transform: translateY(50px);
+  transition: all 0.3s ease 0s;
+}
+.hover-title > h4:hover {
+  background: #dc143c;
+  border: 1px solid #dc143c;
+}
+.demo-img > a::before {
+  background: rgba(0, 0, 0, 0.8);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.demo-titel {
+  background: #dc143c none repeat scroll 0 0;
+  padding: 15px 0;
+  text-align: center;
+}
+.demo-titel h4 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.page-title {
+  margin: 0;
+}
+
+/*-------------------
+  footer css hare
+---------------------*/
+.footer-bottom {
+  background: #333 none repeat scroll 0 0;
+  padding: 35px 0;
+  width: 100%;
+  font-weight: 500;
+}
+.copyright {
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+.copyright > a {
+  color: #DC143C;
+  font-weight: bold;
+}
+.copyright > a:hover {
+  color: #ff475f;
+}
+.social-link a {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+  margin-left: 5px;
+}
+.social-link a:hover {
+    background: #DC143C;
+    color: #fff;
+    border: 1px solid #DC143C;
+}
